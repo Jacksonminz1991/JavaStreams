@@ -28,6 +28,11 @@ public class Streams {
 		System.out.println("=============Sorted===================");
 		manipulatedList.forEach(System.out::println);
 		
+		System.out.println("==========RetainAll==========");
+		List<String> retainedList = new ArrayList<String>(Arrays.asList("Trinity","Mathilda","Minz"));
+		retainedList.retainAll(list);
+		retainedList.forEach(System.out::println);
+		
 		
 	}
 
