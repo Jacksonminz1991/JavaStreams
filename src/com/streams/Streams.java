@@ -43,9 +43,7 @@ public class Streams {
 		
 		Collections.sort(names, Collections.reverseOrder());
 		
-		System.out.println("Collection : "+ names);
-		
-		
+		System.out.println("Collection after being sorted in reverse: "+ names);
 		
 		
 	}
