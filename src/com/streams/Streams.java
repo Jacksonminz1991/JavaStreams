@@ -2,6 +2,8 @@ package com.streams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,6 +34,18 @@ public class Streams {
 		List<String> retainedList = new ArrayList<String>(Arrays.asList("Trinity","Mathilda","Minz"));
 		retainedList.retainAll(list);
 		retainedList.forEach(System.out::println);
+		
+		//Sorting
+		List<String> names = new ArrayList<String>();
+		names.add("Jackson");
+		names.add("Abhineet");
+		names.add("Minz");
+		
+		Collections.sort(names, Collections.reverseOrder());
+		
+		System.out.println("Collection : "+ names);
+		
+		
 		
 		
 	}
